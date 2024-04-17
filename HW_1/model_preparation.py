@@ -6,15 +6,15 @@ import joblib
 
 def main():
     # Загрузка данных
-    X_train = pd.read_csv('/HW_1/train/X_val_scaled.csv')
-    y_train = pd.read_csv('/HW_1/train/y_val.csv')
+    X_train = pd.read_csv('/Users/viktorilin/PycharmProjects/MLOps/HW_1/train/X_val_scaled.csv')
+    y_train = pd.read_csv('/Users/viktorilin/PycharmProjects/MLOps/HW_1/train/y_val.csv')
 
     # Создание и обучение модели линейной регрессии
     model = LinearRegression()
     model.fit(X_train, y_train)
 
     # Сохранение обученной модели
-    joblib.dump(model, '/HW_1/model/linear_regression_model.pkl')
+    joblib.dump(model, '/Users/viktorilin/PycharmProjects/MLOps/HW_1/model/linear_regression_model.pkl')
 
     # Опционально: Вычисление и вывод метрики модели
     y_pred = model.predict(X_train)

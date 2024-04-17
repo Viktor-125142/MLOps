@@ -36,6 +36,7 @@ temperatures = pd.DataFrame({
     'Sunday': Sunday
 })
 
+temperatures.to_csv('/Users/viktorilin/PycharmProjects/MLOps/HW_1/data/dataweekly_temperatures.csv', index=False)
 
 if __name__ == '__main__':
-    temperatures.to_csv('/Users/viktorilin/PycharmProjects/MLOps/HW_1/data/dataweekly_temperatures.csv', index=False)
+    pass

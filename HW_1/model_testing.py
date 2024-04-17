@@ -4,11 +4,11 @@ from sklearn.metrics import mean_squared_error
 
 def main():
     # Загрузка тестовых данных
-    X_test = pd.read_csv('/HW_1/test/X_train_scaled.csv')
-    y_test = pd.read_csv('/HW_1/test/y_train.csv')
+    X_test = pd.read_csv('/Users/viktorilin/PycharmProjects/MLOps/HW_1/test/X_train_scaled.csv')
+    y_test = pd.read_csv('/Users/viktorilin/PycharmProjects/MLOps/HW_1/test/y_train.csv')
 
     # Загрузка обученной модели
-    model = joblib.load('/HW_1/model/linear_regression_model.pkl')
+    model = joblib.load('/Users/viktorilin/PycharmProjects/MLOps/HW_1/model/linear_regression_model.pkl')
 
     # Предсказание тестовых данных
     y_pred = model.predict(X_test)
