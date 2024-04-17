@@ -38,4 +38,4 @@ temperatures = pd.DataFrame({
 
 
 if __name__ == '__main__':
-    temperatures.to_csv('/Users/viktorilin/PycharmProjects/MLOps/HM_1/data/dataweekly_temperatures.csv', index=False)
+    temperatures.to_csv('/Users/viktorilin/PycharmProjects/MLOps/HW_1/data/dataweekly_temperatures.csv', index=False)

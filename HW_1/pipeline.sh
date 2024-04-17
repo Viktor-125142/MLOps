@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Определение пути к директории с Python скриптами
-SCRIPT_DIR="MLOps/HM_1"
+SCRIPT_DIR="MLOps/HW_1"
 
 # Переход в директорию скриптов
 cd $SCRIPT_DIR
