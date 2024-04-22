@@ -71,5 +71,4 @@ def to_teach_and_separate_data():
     y_val.to_csv('train/y_val.csv', index=False)
 
 
-if __name__ == '__main__':
-    to_teach_and_separate_data()
+
