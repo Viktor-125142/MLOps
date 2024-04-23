@@ -34,7 +34,7 @@ pipeline {
                 dir('HW_2') {
                     sh '''
                     source env/bin/activate
-                    $(pwd)/python3 model_testing.py
+                    python3 model_testing.py
                     '''
                 }
             }
