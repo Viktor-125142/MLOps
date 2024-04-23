@@ -4,8 +4,12 @@ pipeline {
         stage('Preparation environment') {
             steps {
                 dir('HW_2') {
-                    sh 'python3 -m pip install -r requirements.txt'
-                    sh 'python3 data_preprocessing.py'
+                    sh 'python3 -m venv env'
+                    sh '''
+                    source env/bin/activate
+                    pip install -r requirements.txt
+                    python3 data_preprocessing.py
+                    '''
                 }
             }
         }
