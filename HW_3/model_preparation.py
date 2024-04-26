@@ -4,7 +4,7 @@ from sklearn.pipeline import Pipeline
 from sklearn.metrics import mean_squared_error as mse
 import joblib
 
-from pipeline import preprocessors_all
+from pipline import preprocessors_all
 from metric.metric_mse_r2 import calculate_metric
 
 
@@ -30,4 +30,4 @@ def model_preparation():
     print(f"mse на тренировочной выборке: {calculate_metric(pipe_all, X_train, y_train, mse):.4f}")
 
 
-model_preparation()
+
