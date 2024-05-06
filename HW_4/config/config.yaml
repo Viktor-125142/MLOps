@@ -1,0 +1,5 @@
+model:
+  params:
+    max_leaf_nodes: 40
+    min_samples_split: 10
+    criterion: 'absolute_error'
